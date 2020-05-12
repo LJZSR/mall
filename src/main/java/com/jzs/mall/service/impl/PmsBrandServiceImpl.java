@@ -6,9 +6,15 @@ import com.jzs.mall.mbg.model.PmsBrand;
 import com.jzs.mall.mbg.model.PmsBrandExample;
 import com.jzs.mall.service.PmsBrandService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * PmsBrandService实现类
+ * Create by jzs on 2020/5/5
+ */
+@Service
 public class PmsBrandServiceImpl implements PmsBrandService {
 
     @Autowired
