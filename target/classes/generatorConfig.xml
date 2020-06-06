@@ -43,7 +43,7 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.jzs.mall.mbg.mapper" targetProject="src/main/java" />
 
         <!-- 生成pms_brand表，全部表为%-->
-        <table tableName="pms_brand">
+        <table tableName="%">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
     </context>
