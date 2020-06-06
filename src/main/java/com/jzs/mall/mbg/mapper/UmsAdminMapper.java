@@ -4,7 +4,9 @@ import com.jzs.mall.mbg.model.UmsAdmin;
 import com.jzs.mall.mbg.model.UmsAdminExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface UmsAdminMapper {
     int countByExample(UmsAdminExample example);
 
