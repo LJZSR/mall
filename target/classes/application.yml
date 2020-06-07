@@ -30,3 +30,8 @@ redis:
     expire:
       authCode: 120
 
+jwt:
+  tokenHeader: Authorization
+  secret: mySecret
+  expiration: 604800
+  tokenHead: Bearer
