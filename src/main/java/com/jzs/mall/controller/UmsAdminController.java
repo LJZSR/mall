@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@Api(tags = "UmsAdminCOntroller", value = "后台用户管理系统")
+@Api(tags = "UmsAdminController", description = "后台用户管理系统")
 @RequestMapping("/admin")
 public class UmsAdminController {
 
@@ -53,7 +53,7 @@ public class UmsAdminController {
         return CommonResult.success(tokenMap);
     }
 
-    @ApiOperation(value = "获取用户所以权限")
+    @ApiOperation(value = "获取用户所有权限")
     @RequestMapping(value = "/permission/{adminId}", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<UmsPermission>> getPermissionList(@PathVariable long adminId) {
